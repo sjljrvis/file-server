@@ -64,7 +64,7 @@ Add file as a form-data and attach desired file to upload it to server.
 This will render the image if exists else server will return 404 error
 
 - **Base URL:** `http://localhost:5555/api`
-- **Endpoint:** `get /file/<:image_id>`
+- **Endpoint:** `get /file/<:_id>`
 - **Description:** Get single image.
 - **Response:** Returns image as response
 
@@ -103,7 +103,7 @@ This will return list of all the images
 This replace existing image with a new image
 
 - **Base URL:** `http://localhost:5555/api`
-- **Endpoint:** `put /file/<:image_id>`
+- **Endpoint:** `put /file/<:_id>`
 - **Description:** Update/replace a single image.
 - **Response:**
 ```json
@@ -124,7 +124,7 @@ This replace existing image with a new image
 This will delete an image
 
 - **Base URL:** `http://localhost:5555/api`
-- **Endpoint:** `delete /file/<:image_id>`
+- **Endpoint:** `delete /file/<:_id>`
 - **Description:** delete a single image.
 - **Response:**
 ```json

@@ -27,7 +27,7 @@ describe("File API", () => {
     });
   });
 
-  describe("get /file/<:image_id>", () => {
+  describe("get /file/<:_id>", () => {
     it("should get a file", async () => {
       const response = await request(baseURL).get(`/file/${fileId}`);
       expect(response.statusCode).toBe(200);
@@ -48,7 +48,7 @@ describe("File API", () => {
     });
   });
 
-  describe("put /file/<:image_id>", () => {
+  describe("put /file/<:_id>", () => {
     it("should update and replace a file", async () => {
       const response = await request(baseURL)
         .put(`/file/${fileId}`)
@@ -67,7 +67,7 @@ describe("File API", () => {
     });
   });
 
-  describe("delete /file/<:image_id>", () => {
+  describe("delete /file/<:_id>", () => {
     it("should delete a file", async () => {
       const response = await request(baseURL).delete(`/file/${fileId}`);
       expect(response.statusCode).toBe(200);
